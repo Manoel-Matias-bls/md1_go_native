@@ -1,0 +1,3 @@
+rootProject.name = 'md1_go_native'
+
+include ':app'
