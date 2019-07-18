@@ -1,14 +1,20 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
+import PropTypes from "prop-types";
+
 export default class App extends Component {
   static defaultProps = {
     title: "Todo Padrão"
   };
+
+  static propTypes = {
+    title: PropTypes.string.isRequired
+  };
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Estudar o GoNative</Text>
+      <View>
         <Text>{this.props.title}</Text>
       </View>
     );
